@@ -66,11 +66,14 @@ function getBreeds(){
                         }
 
 function handleClick(event){
-    if (event.target ==='li')
+    if (event.target.nodeName ==='LI')//move event up to the parent
+    {
+//trickle down this response
     if(event.target.style.color === 'green'){
         event.target.style.color = 'black'
     } else {
         event.target.style.color = 'green';
+    }
     }
 }
 function handleChange(event){
